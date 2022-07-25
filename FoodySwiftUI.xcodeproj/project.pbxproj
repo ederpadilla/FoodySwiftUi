@@ -16,6 +16,7 @@
 		E665120B288F1F2E0099DB86 /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665120A288F1F2E0099DB86 /* OrdersView.swift */; };
 		E665120E288F2BCB0099DB86 /* FoodyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665120D288F2BCB0099DB86 /* FoodyModels.swift */; };
 		E6651212288F2D0D0099DB86 /* FoodyRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6651211288F2D0D0099DB86 /* FoodyRemote.swift */; };
+		E6651214288F3F4B0099DB86 /* FoodyItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6651213288F3F4B0099DB86 /* FoodyItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		E665120A288F1F2E0099DB86 /* OrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
 		E665120D288F2BCB0099DB86 /* FoodyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodyModels.swift; sourceTree = "<group>"; };
 		E6651211288F2D0D0099DB86 /* FoodyRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodyRemote.swift; sourceTree = "<group>"; };
+		E6651213288F3F4B0099DB86 /* FoodyItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodyItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				E665120A288F1F2E0099DB86 /* OrdersView.swift */,
 				E66511FC288F1D5F0099DB86 /* Assets.xcassets */,
 				E66511FE288F1D5F0099DB86 /* Preview Content */,
+				E6651213288F3F4B0099DB86 /* FoodyItemView.swift */,
 			);
 			path = FoodySwiftUI;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6651209288F1F230099DB86 /* AccountView.swift in Sources */,
+				E6651214288F3F4B0099DB86 /* FoodyItemView.swift in Sources */,
 				E6651207288F1EB30099DB86 /* HomeListView.swift in Sources */,
 				E6651212288F2D0D0099DB86 /* FoodyRemote.swift in Sources */,
 				E66511FB288F1D5C0099DB86 /* HomeTabView.swift in Sources */,

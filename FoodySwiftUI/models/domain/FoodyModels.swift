@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Foody {
+struct Foody: Identifiable {
     let id: Int
     let name: String
     let description: String

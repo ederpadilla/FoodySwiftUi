@@ -76,7 +76,7 @@ struct MockData {
     static let smapleFoody3 = Foody(id: 3,
                                    name: "Tacos",
                                    description: "This is a cheesy burger very yummy3!",
-                                   price: 55.99,
+                                   price: 55.9999999,
                                    image: "https://seanallen-course-backend.herokuapp.com/images/appetizers/chicken-dumplings.jpg",
                                    calories: 613,
                                    protein: 363,
