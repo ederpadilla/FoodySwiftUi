@@ -11,7 +11,7 @@ import SwiftUI
 struct FoodySwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeTabView()
         }
     }
 }

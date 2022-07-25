@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E66511F9288F1D5C0099DB86 /* FoodySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66511F8288F1D5C0099DB86 /* FoodySwiftUIApp.swift */; };
-		E66511FB288F1D5C0099DB86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66511FA288F1D5C0099DB86 /* ContentView.swift */; };
+		E66511FB288F1D5C0099DB86 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66511FA288F1D5C0099DB86 /* HomeTabView.swift */; };
 		E66511FD288F1D5F0099DB86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66511FC288F1D5F0099DB86 /* Assets.xcassets */; };
 		E6651200288F1D5F0099DB86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66511FF288F1D5F0099DB86 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		E66511F5288F1D5C0099DB86 /* FoodySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66511F8288F1D5C0099DB86 /* FoodySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodySwiftUIApp.swift; sourceTree = "<group>"; };
-		E66511FA288F1D5C0099DB86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E66511FA288F1D5C0099DB86 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		E66511FC288F1D5F0099DB86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E66511FF288F1D5F0099DB86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				E66511F8288F1D5C0099DB86 /* FoodySwiftUIApp.swift */,
-				E66511FA288F1D5C0099DB86 /* ContentView.swift */,
+				E66511FA288F1D5C0099DB86 /* HomeTabView.swift */,
 				E66511FC288F1D5F0099DB86 /* Assets.xcassets */,
 				E66511FE288F1D5F0099DB86 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E66511FB288F1D5C0099DB86 /* ContentView.swift in Sources */,
+				E66511FB288F1D5C0099DB86 /* HomeTabView.swift in Sources */,
 				E66511F9288F1D5C0099DB86 /* FoodySwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
