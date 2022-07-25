@@ -16,7 +16,7 @@ struct HomeTabView: View {
                     Image(systemName: "house.circle")
                     Text("Home")
                 }
-            OrderView()
+            OrdersView()
                 .tabItem {
                     Image(systemName: "clock")
                     Text("Orders")

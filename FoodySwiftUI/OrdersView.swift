@@ -1,5 +1,5 @@
 //
-//  HomeListView.swift
+//  OrderView.swift
 //  FoodySwiftUI
 //
 //  Created by Eder  Padilla on 25/07/22.
@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct HomeListView: View {
+struct OrdersView: View {
     var body: some View {
         NavigationView {
-            Text("Home View")
-                .navigationTitle("Foody 🥪")
+            Text("Orders")
+                .navigationTitle("Orders 🍻")
         }
     }
 }
 
-struct HomeListView_Previews: PreviewProvider {
+struct OrdersView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeListView()
+        OrdersView()
     }
 }
