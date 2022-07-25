@@ -14,6 +14,8 @@
 		E6651207288F1EB30099DB86 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6651206288F1EB30099DB86 /* HomeListView.swift */; };
 		E6651209288F1F230099DB86 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6651208288F1F230099DB86 /* AccountView.swift */; };
 		E665120B288F1F2E0099DB86 /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665120A288F1F2E0099DB86 /* OrdersView.swift */; };
+		E665120E288F2BCB0099DB86 /* FoodyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665120D288F2BCB0099DB86 /* FoodyModels.swift */; };
+		E6651212288F2D0D0099DB86 /* FoodyRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6651211288F2D0D0099DB86 /* FoodyRemote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		E6651206288F1EB30099DB86 /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
 		E6651208288F1F230099DB86 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		E665120A288F1F2E0099DB86 /* OrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
+		E665120D288F2BCB0099DB86 /* FoodyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodyModels.swift; sourceTree = "<group>"; };
+		E6651211288F2D0D0099DB86 /* FoodyRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodyRemote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 		E66511F7288F1D5C0099DB86 /* FoodySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				E665120C288F2BBE0099DB86 /* models */,
 				E66511F8288F1D5C0099DB86 /* FoodySwiftUIApp.swift */,
 				E66511FA288F1D5C0099DB86 /* HomeTabView.swift */,
 				E6651206288F1EB30099DB86 /* HomeListView.swift */,
@@ -74,6 +79,31 @@
 				E66511FF288F1D5F0099DB86 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E665120C288F2BBE0099DB86 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E6651210288F2CCF0099DB86 /* remote */,
+				E665120F288F2CA20099DB86 /* domain */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		E665120F288F2CA20099DB86 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				E665120D288F2BCB0099DB86 /* FoodyModels.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		E6651210288F2CCF0099DB86 /* remote */ = {
+			isa = PBXGroup;
+			children = (
+				E6651211288F2D0D0099DB86 /* FoodyRemote.swift */,
+			);
+			path = remote;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +178,9 @@
 			files = (
 				E6651209288F1F230099DB86 /* AccountView.swift in Sources */,
 				E6651207288F1EB30099DB86 /* HomeListView.swift in Sources */,
+				E6651212288F2D0D0099DB86 /* FoodyRemote.swift in Sources */,
 				E66511FB288F1D5C0099DB86 /* HomeTabView.swift in Sources */,
+				E665120E288F2BCB0099DB86 /* FoodyModels.swift in Sources */,
 				E66511F9288F1D5C0099DB86 /* FoodySwiftUIApp.swift in Sources */,
 				E665120B288F1F2E0099DB86 /* OrdersView.swift in Sources */,
 			);
