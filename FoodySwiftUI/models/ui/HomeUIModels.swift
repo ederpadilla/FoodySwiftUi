@@ -10,10 +10,13 @@ import Foundation
 struct HomeUI {
     
     var foodys: [FoodyListItemUI]
+    var isLoading: Bool
     var alertItem: AlertItem?
     
-    init(foodys: [FoodyListItemUI] = []) {
+    init(foodys: [FoodyListItemUI] = [],
+         isLoading: Bool = false) {
         self.foodys = foodys
+        self.isLoading = isLoading
     }
 }
 

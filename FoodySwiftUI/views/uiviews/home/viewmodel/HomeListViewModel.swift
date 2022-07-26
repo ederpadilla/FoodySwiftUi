@@ -14,16 +14,22 @@ class HomeListViewModel: ObservableObject {
     
     
     func getFoodyes() {
+        homeUI.isLoading = true
         NetworkManager.shared.getFoodyes { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let foodys):
-                    self?.homeUI.foodys = foodys.asFoodyListItemUI()
+                    self?.handleGetFoodyesSuccess(foodys)
                 case .failure(let error):
                     self?.handleGetFoodyes(error)
                 }
+                self?.homeUI.isLoading = false
             }
         }
+    }
+    
+    private func handleGetFoodyesSuccess(_ foodys: [Foody]) {
+        homeUI.foodys = foodys.asFoodyListItemUI()
     }
     
     private func handleGetFoodyes(_ error: FoodyError) {
