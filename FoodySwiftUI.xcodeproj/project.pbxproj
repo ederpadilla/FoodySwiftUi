@@ -134,6 +134,7 @@
 		E6490D3028906E3C00A3F281 /* foundation */ = {
 			isa = PBXGroup;
 			children = (
+				E6490D342890734400A3F281 /* network */,
 				E6490D3128906E4300A3F281 /* uiextensions */,
 			);
 			path = foundation;
@@ -145,6 +146,14 @@
 				E6490D3228906E4E00A3F281 /* Color+Extension.swift */,
 			);
 			path = uiextensions;
+			sourceTree = "<group>";
+		};
+		E6490D342890734400A3F281 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				E6691D6A288F767600C0C873 /* NetworkManager.swift */,
+			);
+			path = network;
 			sourceTree = "<group>";
 		};
 		E66511EC288F1D5C0099DB86 = {
@@ -215,7 +224,6 @@
 		E6691D69288F765D00C0C873 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				E6691D6A288F767600C0C873 /* NetworkManager.swift */,
 				E6691D6C288F774800C0C873 /* FoodyError.swift */,
 			);
 			path = data;
