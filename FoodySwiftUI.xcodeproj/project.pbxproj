@@ -17,6 +17,8 @@
 		E665120E288F2BCB0099DB86 /* FoodyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665120D288F2BCB0099DB86 /* FoodyModels.swift */; };
 		E6651212288F2D0D0099DB86 /* FoodyRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6651211288F2D0D0099DB86 /* FoodyRemote.swift */; };
 		E6651214288F3F4B0099DB86 /* FoodyItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6651213288F3F4B0099DB86 /* FoodyItemView.swift */; };
+		E6691D6B288F767600C0C873 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6691D6A288F767600C0C873 /* NetworkManager.swift */; };
+		E6691D6D288F774800C0C873 /* FoodyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6691D6C288F774800C0C873 /* FoodyError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		E665120D288F2BCB0099DB86 /* FoodyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodyModels.swift; sourceTree = "<group>"; };
 		E6651211288F2D0D0099DB86 /* FoodyRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodyRemote.swift; sourceTree = "<group>"; };
 		E6651213288F3F4B0099DB86 /* FoodyItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodyItemView.swift; sourceTree = "<group>"; };
+		E6691D6A288F767600C0C873 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E6691D6C288F774800C0C873 /* FoodyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodyError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 		E66511F7288F1D5C0099DB86 /* FoodySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				E6691D69288F765D00C0C873 /* data */,
 				E665120C288F2BBE0099DB86 /* models */,
 				E66511F8288F1D5C0099DB86 /* FoodySwiftUIApp.swift */,
 				E66511FA288F1D5C0099DB86 /* HomeTabView.swift */,
@@ -107,6 +112,15 @@
 				E6651211288F2D0D0099DB86 /* FoodyRemote.swift */,
 			);
 			path = remote;
+			sourceTree = "<group>";
+		};
+		E6691D69288F765D00C0C873 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				E6691D6A288F767600C0C873 /* NetworkManager.swift */,
+				E6691D6C288F774800C0C873 /* FoodyError.swift */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +193,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6691D6B288F767600C0C873 /* NetworkManager.swift in Sources */,
 				E6651209288F1F230099DB86 /* AccountView.swift in Sources */,
 				E6651214288F3F4B0099DB86 /* FoodyItemView.swift in Sources */,
 				E6651207288F1EB30099DB86 /* HomeListView.swift in Sources */,
+				E6691D6D288F774800C0C873 /* FoodyError.swift in Sources */,
 				E6651212288F2D0D0099DB86 /* FoodyRemote.swift in Sources */,
 				E66511FB288F1D5C0099DB86 /* HomeTabView.swift in Sources */,
 				E665120E288F2BCB0099DB86 /* FoodyModels.swift in Sources */,

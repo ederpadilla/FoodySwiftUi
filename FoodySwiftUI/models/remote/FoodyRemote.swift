@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FoodyResponse {
+struct FoodyResponse: Decodable {
     let request: [FoodyRemote]
 }
 
