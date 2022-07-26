@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E6490D1F28903F6400A3F281 /* HomeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D1E28903F6400A3F281 /* HomeListViewModel.swift */; };
 		E6490D2228903FA600A3F281 /* HomeUIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D2128903FA600A3F281 /* HomeUIModels.swift */; };
+		E6490D2A289043BF00A3F281 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D29289043BF00A3F281 /* AlertView.swift */; };
+		E6490D2C2890457300A3F281 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D2B2890457300A3F281 /* Alerts.swift */; };
 		E66511F9288F1D5C0099DB86 /* FoodySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66511F8288F1D5C0099DB86 /* FoodySwiftUIApp.swift */; };
 		E66511FB288F1D5C0099DB86 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66511FA288F1D5C0099DB86 /* HomeTabView.swift */; };
 		E66511FD288F1D5F0099DB86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66511FC288F1D5F0099DB86 /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 /* Begin PBXFileReference section */
 		E6490D1E28903F6400A3F281 /* HomeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewModel.swift; sourceTree = "<group>"; };
 		E6490D2128903FA600A3F281 /* HomeUIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUIModels.swift; sourceTree = "<group>"; };
+		E6490D29289043BF00A3F281 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		E6490D2B2890457300A3F281 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		E66511F5288F1D5C0099DB86 /* FoodySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66511F8288F1D5C0099DB86 /* FoodySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodySwiftUIApp.swift; sourceTree = "<group>"; };
 		E66511FA288F1D5C0099DB86 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
@@ -64,8 +68,62 @@
 			isa = PBXGroup;
 			children = (
 				E6490D2128903FA600A3F281 /* HomeUIModels.swift */,
+				E6490D2B2890457300A3F281 /* Alerts.swift */,
 			);
 			path = ui;
+			sourceTree = "<group>";
+		};
+		E6490D232890434100A3F281 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				E6490D282890437B00A3F281 /* alerts */,
+				E6490D242890434A00A3F281 /* uiviews */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		E6490D242890434A00A3F281 /* uiviews */ = {
+			isa = PBXGroup;
+			children = (
+				E6490D272890437100A3F281 /* orders */,
+				E6490D262890436900A3F281 /* account */,
+				E6490D252890435400A3F281 /* home */,
+			);
+			path = uiviews;
+			sourceTree = "<group>";
+		};
+		E6490D252890435400A3F281 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				E6490D1D28903F3F00A3F281 /* viewmodel */,
+				E66511FA288F1D5C0099DB86 /* HomeTabView.swift */,
+				E6651206288F1EB30099DB86 /* HomeListView.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		E6490D262890436900A3F281 /* account */ = {
+			isa = PBXGroup;
+			children = (
+				E6651208288F1F230099DB86 /* AccountView.swift */,
+			);
+			path = account;
+			sourceTree = "<group>";
+		};
+		E6490D272890437100A3F281 /* orders */ = {
+			isa = PBXGroup;
+			children = (
+				E665120A288F1F2E0099DB86 /* OrdersView.swift */,
+			);
+			path = orders;
+			sourceTree = "<group>";
+		};
+		E6490D282890437B00A3F281 /* alerts */ = {
+			isa = PBXGroup;
+			children = (
+				E6490D29289043BF00A3F281 /* AlertView.swift */,
+			);
+			path = alerts;
 			sourceTree = "<group>";
 		};
 		E66511EC288F1D5C0099DB86 = {
@@ -87,14 +145,10 @@
 		E66511F7288F1D5C0099DB86 /* FoodySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				E6490D1D28903F3F00A3F281 /* viewmodel */,
+				E6490D232890434100A3F281 /* views */,
 				E6691D69288F765D00C0C873 /* data */,
 				E665120C288F2BBE0099DB86 /* models */,
 				E66511F8288F1D5C0099DB86 /* FoodySwiftUIApp.swift */,
-				E66511FA288F1D5C0099DB86 /* HomeTabView.swift */,
-				E6651206288F1EB30099DB86 /* HomeListView.swift */,
-				E6651208288F1F230099DB86 /* AccountView.swift */,
-				E665120A288F1F2E0099DB86 /* OrdersView.swift */,
 				E66511FC288F1D5F0099DB86 /* Assets.xcassets */,
 				E66511FE288F1D5F0099DB86 /* Preview Content */,
 				E6651213288F3F4B0099DB86 /* FoodyItemView.swift */,
@@ -223,9 +277,11 @@
 				E6490D1F28903F6400A3F281 /* HomeListViewModel.swift in Sources */,
 				E6691D6D288F774800C0C873 /* FoodyError.swift in Sources */,
 				E6651212288F2D0D0099DB86 /* FoodyRemote.swift in Sources */,
+				E6490D2A289043BF00A3F281 /* AlertView.swift in Sources */,
 				E66511FB288F1D5C0099DB86 /* HomeTabView.swift in Sources */,
 				E665120E288F2BCB0099DB86 /* FoodyModels.swift in Sources */,
 				E66511F9288F1D5C0099DB86 /* FoodySwiftUIApp.swift in Sources */,
+				E6490D2C2890457300A3F281 /* Alerts.swift in Sources */,
 				E665120B288F1F2E0099DB86 /* OrdersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
