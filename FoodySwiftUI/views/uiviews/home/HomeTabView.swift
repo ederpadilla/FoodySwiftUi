@@ -26,7 +26,7 @@ struct HomeTabView: View {
                     Image(systemName: "person")
                     Text("Account")
                 }
-        }.accentColor(Color("primaryOrange"))
+        }.accentColor(.primaryOrange)
     }
 }
 
