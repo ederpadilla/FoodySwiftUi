@@ -19,7 +19,7 @@ final class NetworkManager {
     func getFoodyes(completed: @escaping(Result<[Foody], FoodyError>) -> Void) {
         guard let url = URL(string: "\(baseUrl)\(appetizerEndPoint)") else { completed(.failure(.invalidURL)); return }
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
-            guard let _ = error else {
+            if error != nil {
                 completed(.failure(.noInternet))
                 return
             }

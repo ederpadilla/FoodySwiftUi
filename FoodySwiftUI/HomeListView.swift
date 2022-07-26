@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct HomeListView: View {
+    
+    @StateObject var viewModel = HomeListViewModel()
+    
     var body: some View {
         NavigationView {
-            List(MockData.foodys) { foody in
+            List(viewModel.homeUI.foodys) { foody in
                 FoodyItemView(foody: foody)
             }
             .navigationTitle("🥪 Foods")
+        }
+        .onAppear {
+            viewModel.getFoodyes()
         }
     }
 }
