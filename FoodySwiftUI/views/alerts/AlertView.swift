@@ -37,5 +37,5 @@ struct AlertContext {
                                       message: "There was an error connecting to the server.").asAlertItem()
     
     static let noInternet = AlertInfo(title: "🌎No internet🌎",
-                                      message: "").asAlertItem()
+                                      message: "Please check your connnection").asAlertItem()
 }
