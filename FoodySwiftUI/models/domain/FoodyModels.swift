@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Foody: Identifiable {
+struct Foody {
     let id: Int
     let name: String
     let description: String
@@ -16,4 +16,16 @@ struct Foody: Identifiable {
     let calories: Int
     let protein: Int
     let carbs: Int
+}
+
+extension Array where Element == Foody {
+    
+    func asFoodyListItemUI() -> [FoodyListItemUI] {
+        compactMap { foody in
+            FoodyListItemUI(id: foody.id,
+                            name: foody.name,
+                            price: foody.price,
+                            image: foody.image)
+        }
+    }
 }

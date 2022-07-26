@@ -9,9 +9,16 @@ import Foundation
 
 struct HomeUI {
     
-    var foodys: [Foody]
+    var foodys: [FoodyListItemUI]
     
-    init(foodys: [Foody] = []) {
+    init(foodys: [FoodyListItemUI] = []) {
         self.foodys = foodys
     }
+}
+
+struct FoodyListItemUI: Identifiable {
+    let id: Int
+    let name: String
+    let price: Double
+    let image: String
 }

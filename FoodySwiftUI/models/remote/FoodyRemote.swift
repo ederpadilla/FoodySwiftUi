@@ -55,6 +55,12 @@ extension FoodyRemote {
 }
 
 struct MockData {
+    
+    static let sampleItemListUi = FoodyListItemUI(id: 1,
+                                                  name: "Nachos",
+                                                  price: 25.99999,
+                                                  image: "https://seanallen-course-backend.herokuapp.com/images/appetizers/buffalo-chicken-bites.jpg")
+    
     static let smapleFoody = Foody(id: 1,
                                    name: "Burgers",
                                    description: "This is a cheesy burger very yummy!",

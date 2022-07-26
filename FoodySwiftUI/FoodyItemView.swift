@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FoodyItemView: View {
-    var foody: Foody
+    var foody: FoodyListItemUI
     
     var body: some View {
         HStack {
@@ -36,6 +36,6 @@ struct FoodyItemView: View {
 
 struct FoodyItemView_Previews: PreviewProvider {
     static var previews: some View {
-        FoodyItemView(foody: MockData.smapleFoody)
+        FoodyItemView(foody: MockData.sampleItemListUi)
     }
 }

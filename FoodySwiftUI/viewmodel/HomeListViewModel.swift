@@ -18,7 +18,7 @@ class HomeListViewModel: ObservableObject {
             DispatchQueue.main.async {
                 switch result {
                 case .success(let foodys):
-                    self.homeUI.foodys = foodys
+                    self.homeUI.foodys = foodys.asFoodyListItemUI()
                 case .failure(let error):
                     print("error \(error)")
                 }
