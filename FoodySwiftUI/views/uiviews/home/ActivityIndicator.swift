@@ -18,3 +18,20 @@ struct ActivityIndicator: UIViewRepresentable {
     
     func updateUIView(_ uiView: UIViewType, context: Context) {}
 }
+
+struct LoadingView: View {
+    
+    var body: some View {
+        ZStack {
+            Color(.systemBackground)
+                .ignoresSafeArea()
+            ActivityIndicator()
+        }
+    }
+}
+
+struct LoadingView_Previews: PreviewProvider {
+    static var previews: some View {
+        LoadingView()
+    }
+}
