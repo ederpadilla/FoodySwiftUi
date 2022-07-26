@@ -18,6 +18,11 @@ struct HomeListView: View {
             }
             .navigationTitle("🥪 Foods")
         }
+        .alert(item: $viewModel.homeUI.alertItem) { alert in
+            Alert(title: alert.title,
+                  message: alert.message,
+                  dismissButton: alert.dismissButton)
+        }
         .onAppear {
             viewModel.getFoodyes()
         }

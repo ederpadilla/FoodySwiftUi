@@ -10,6 +10,7 @@ import Foundation
 struct HomeUI {
     
     var foodys: [FoodyListItemUI]
+    var alertItem: AlertItem?
     
     init(foodys: [FoodyListItemUI] = []) {
         self.foodys = foodys
