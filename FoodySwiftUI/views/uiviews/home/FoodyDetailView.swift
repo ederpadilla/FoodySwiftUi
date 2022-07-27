@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct FoodyDetailView: View {
-    let foody: Foody
     
+    @Binding var isShowingView: Bool
+    let foody: Foody
     
     var body: some View {
         VStack {
@@ -38,7 +39,7 @@ struct FoodyDetailView: View {
             Spacer()
             
             Button {
-                print("🚀🚀🚀🚀")
+                isShowingView = false
             } label: {
                 Label("$\(foody.price, specifier: "%.2f") - Add to Order",
                       systemImage: "fork.knife.circle.fill")
@@ -56,13 +57,14 @@ struct FoodyDetailView: View {
         .background(Color(.systemBackground))
         .cornerRadius(12)
         .shadow(radius: 40)
-        .overlay(XMarkButtonView(),
+        .overlay(XMarkButtonView(isShowingView: $isShowingView),
                  alignment: .topTrailing)
     }
 }
 
 struct FoodyDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FoodyDetailView(foody: MockData.smapleFoody)
+        FoodyDetailView(isShowingView: .constant(false),
+                        foody: MockData.smapleFoody)
     }
 }

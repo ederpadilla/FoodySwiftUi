@@ -27,7 +27,8 @@ struct HomeListView: View {
             }
             
             if viewModel.homeUI.isShowingDetail {
-                FoodyDetailView(foody: MockData.smapleFoody)
+                FoodyDetailView(isShowingView: $viewModel.homeUI.isShowingDetail,
+                                foody: MockData.smapleFoody)
             }
             
             if viewModel.homeUI.isLoading {

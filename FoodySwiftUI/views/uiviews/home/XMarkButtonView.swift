@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct XMarkButtonView: View {
+    
+    @Binding var isShowingView: Bool
+    
     var body: some View {
         Button(action: {
-            print("dismiss")
+            isShowingView = false
         }, label: {
             ZStack {
                 Circle()
@@ -30,7 +33,7 @@ struct XMarkButtonView: View {
 
 struct XMarkButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        XMarkButtonView()
+        XMarkButtonView(isShowingView: .constant(true))
             .preferredColorScheme(.dark)
     }
 }
