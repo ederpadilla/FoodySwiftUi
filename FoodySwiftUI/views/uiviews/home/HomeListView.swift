@@ -15,13 +15,21 @@ struct HomeListView: View {
         ZStack {
             NavigationView {
                 List(viewModel.homeUI.foodys) { foody in
-                    FoodyItemView(foody: foody)
+                    FoodyItemView(foodyListItemUI: foody)
+                        .onTapGesture {
+                            viewModel.homeUI.isShowingDetail = true
+                        }
                 }
                 .navigationTitle("🥪 Foods")
             }
             .onAppear {
                 viewModel.getFoodyes()
             }
+            
+            if viewModel.homeUI.isShowingDetail {
+                FoodyDetailView(foody: MockData.smapleFoody)
+            }
+            
             if viewModel.homeUI.isLoading {
                 LoadingView()
             }

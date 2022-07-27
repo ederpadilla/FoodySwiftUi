@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct FoodyItemView: View {
-    var foody: FoodyListItemUI
+    var foodyListItemUI: FoodyListItemUI
     
     var body: some View {
         HStack {
-            FoodyRemoteImage(url: foody.image)
+            FoodyRemoteImage(url: foodyListItemUI.image)
                 .aspectRatio(contentMode: .fit)
                 .clipped()
                 .frame(width: 120,
@@ -21,11 +21,11 @@ struct FoodyItemView: View {
             
             VStack(alignment: .leading, spacing: 5) {
                 
-                Text(foody.name)
+                Text(foodyListItemUI.name)
                     .font(.title2)
                     .fontWeight(.medium)
                 
-                Text("$\(foody.price, specifier: "%.2f")")
+                Text("$\(foodyListItemUI.price, specifier: "%.2f")")
                     .foregroundColor(.secondary)
                     .fontWeight(.semibold)
             }.padding(.leading)
@@ -35,6 +35,6 @@ struct FoodyItemView: View {
 
 struct FoodyItemView_Previews: PreviewProvider {
     static var previews: some View {
-        FoodyItemView(foody: MockData.sampleItemListUi)
+        FoodyItemView(foodyListItemUI: MockData.sampleItemListUi)
     }
 }

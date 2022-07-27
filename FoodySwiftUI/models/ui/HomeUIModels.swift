@@ -12,11 +12,14 @@ struct HomeUI {
     var foodys: [FoodyListItemUI]
     var isLoading: Bool
     var alertItem: AlertItem?
+    var isShowingDetail: Bool
     
     init(foodys: [FoodyListItemUI] = [],
-         isLoading: Bool = false) {
+         isLoading: Bool = false,
+         isShowingDetail: Bool = false) {
         self.foodys = foodys
         self.isLoading = isLoading
+        self.isShowingDetail = isShowingDetail
     }
 }
 
