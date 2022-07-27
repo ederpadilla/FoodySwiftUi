@@ -41,4 +41,10 @@ struct AlertContext {
     
     static let unknown = AlertInfo(title: "🤖Unknown🤖",
                                    message: "Something wrong happens, please try again").asAlertItem()
+    
+    static let emptyFields = AlertInfo(title: "😪Empty fields😪",
+                                       message: "U need to fill all the fields before saving").asAlertItem()
+    
+    static let invalidEmail = AlertInfo(title: "🤖Invalid Email🤖",
+                                        message: "The email address is invalid.").asAlertItem()
 }
