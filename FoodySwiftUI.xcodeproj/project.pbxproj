@@ -18,6 +18,7 @@
 		E6490D432890CB9700A3F281 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D422890CB9700A3F281 /* View+Extension.swift */; };
 		E6490D452890CF8B00A3F281 /* NutritionFoodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D442890CF8B00A3F281 /* NutritionFoodyView.swift */; };
 		E6490D472890D95D00A3F281 /* XMarkButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D462890D95D00A3F281 /* XMarkButtonView.swift */; };
+		E662187E2891F1B300F77EEA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662187D2891F1B300F77EEA /* User.swift */; };
 		E66511F9288F1D5C0099DB86 /* FoodySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66511F8288F1D5C0099DB86 /* FoodySwiftUIApp.swift */; };
 		E66511FB288F1D5C0099DB86 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66511FA288F1D5C0099DB86 /* TabView.swift */; };
 		E66511FD288F1D5F0099DB86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66511FC288F1D5F0099DB86 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		E6490D422890CB9700A3F281 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		E6490D442890CF8B00A3F281 /* NutritionFoodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFoodyView.swift; sourceTree = "<group>"; };
 		E6490D462890D95D00A3F281 /* XMarkButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButtonView.swift; sourceTree = "<group>"; };
+		E662187D2891F1B300F77EEA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E66511F5288F1D5C0099DB86 /* FoodySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66511F8288F1D5C0099DB86 /* FoodySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodySwiftUIApp.swift; sourceTree = "<group>"; };
 		E66511FA288F1D5C0099DB86 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				E665120D288F2BCB0099DB86 /* FoodyModels.swift */,
+				E662187D2891F1B300F77EEA /* User.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				E6490D2228903FA600A3F281 /* HomeUIModels.swift in Sources */,
 				E6490D1F28903F6400A3F281 /* HomeListViewModel.swift in Sources */,
 				E6490D3328906E4E00A3F281 /* Color+Extension.swift in Sources */,
+				E662187E2891F1B300F77EEA /* User.swift in Sources */,
 				E6691D6D288F774800C0C873 /* FoodyError.swift in Sources */,
 				E6651212288F2D0D0099DB86 /* FoodyRemote.swift in Sources */,
 				E6490D2A289043BF00A3F281 /* AlertView.swift in Sources */,

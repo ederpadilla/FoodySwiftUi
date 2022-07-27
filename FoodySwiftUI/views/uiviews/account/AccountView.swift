@@ -9,20 +9,23 @@ import SwiftUI
 
 struct AccountView: View {
     
-    @State private var firstName = ""
-    @State private var lastName = ""
-    @State private var emailName = ""
+    @State var user: User
     
     var body: some View {
         NavigationView {
             Form {
                 Section {
-                    TextField("First name", text: $firstName)
-                    TextField("Last Name", text: $lastName)
-                    TextField("Email", text: $emailName)
+                    TextField("First name", text: $user.firstName)
+                    TextField("Last Name", text: $user.lastName)
+                    TextField("Email", text: $user.emailName)
                         .keyboardType(.emailAddress)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
+                    
+                    DatePicker("Birthdate",
+                               selection: $user.birthDate,
+                               in: ...Date(),
+                               displayedComponents: .date)
                 } header: {
                     Text("😇Account")
                 }
@@ -33,6 +36,6 @@ struct AccountView: View {
 
 struct AccountView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountView()
+        AccountView(user: User())
     }
 }
