@@ -9,21 +9,21 @@ import SwiftUI
 
 struct AccountView: View {
     
-    @State var user: User
+    @StateObject var accountViewModel = AccountViewModel()
     
     var body: some View {
         NavigationView {
             Form {
                 Section {
-                    TextField("First name", text: $user.firstName)
-                    TextField("Last Name", text: $user.lastName)
-                    TextField("Email", text: $user.emailName)
+                    TextField("First name", text: $accountViewModel.user.firstName)
+                    TextField("Last Name", text: $accountViewModel.user.lastName)
+                    TextField("Email", text: $accountViewModel.user.emailName)
                         .keyboardType(.emailAddress)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
                     
                     DatePicker("Birthdate",
-                               selection: $user.birthDate,
+                               selection: $accountViewModel.user.birthDate,
                                in: ...Date(),
                                displayedComponents: .date)
                     
@@ -38,9 +38,9 @@ struct AccountView: View {
                 }
 
                 Section {
-                    Toggle("Extra Napkings", isOn: $user.extraNapkings)
+                    Toggle("Extra Napkings", isOn: $accountViewModel.user.extraNapkings)
                         
-                    Toggle("Frequent Refills", isOn: $user.frequentRefills)
+                    Toggle("Frequent Refills", isOn: $accountViewModel.user.frequentRefills)
                 } header: {
                     Text("🎛Request")
                 }.tint(.primaryOrange)
@@ -52,6 +52,6 @@ struct AccountView: View {
 
 struct AccountView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountView(user: User())
+        AccountView(accountViewModel: AccountViewModel())
     }
 }
