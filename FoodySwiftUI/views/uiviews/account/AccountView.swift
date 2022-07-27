@@ -26,6 +26,13 @@ struct AccountView: View {
                                selection: $user.birthDate,
                                in: ...Date(),
                                displayedComponents: .date)
+                    
+                    Button {
+                        print("Save")
+                    } label: {
+                        Label("Save",
+                              systemImage: "square.and.arrow.down")
+                    }
                 } header: {
                     Text("😇Account")
                 }
