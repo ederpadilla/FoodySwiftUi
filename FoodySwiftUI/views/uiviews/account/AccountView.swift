@@ -9,24 +9,24 @@ import SwiftUI
 
 struct AccountView: View {
     
-    @StateObject var accountViewModel = AccountViewModel()
+    @StateObject var viewModel = AccountViewModel()
     
     var body: some View {
         NavigationView {
             Form {
                 Section {
-                    TextField("First name", text: $accountViewModel.user.firstName)
-                    TextField("Last Name", text: $accountViewModel.user.lastName)
-                    TextField("Email", text: $accountViewModel.user.email)
+                    TextField("First name", text: $viewModel.user.firstName)
+                    TextField("Last Name", text: $viewModel.user.lastName)
+                    TextField("Email", text: $viewModel.user.email)
                         .keyboardType(.emailAddress)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
                     
                     DatePicker("Birthdate",
-                               selection: $accountViewModel.user.birthDate,
+                               selection: $viewModel.user.birthDate,
                                in: ...Date(),
                                displayedComponents: .date)
-                    .onChange(of: accountViewModel.user.birthDate) { newValue in
+                    .onChange(of: viewModel.user.birthDate) { newValue in
                         print("🚀newValue \(newValue)")
                     }
                     
@@ -39,22 +39,29 @@ struct AccountView: View {
                 } header: {
                     Text("😇Account")
                 }
-
+                
                 Section {
-                    Toggle("Extra Napkings", isOn: $accountViewModel.user.extraNapkings)
-                        
-                    Toggle("Frequent Refills", isOn: $accountViewModel.user.frequentRefills)
+                    Toggle("Extra Napkings",
+                           isOn: $viewModel.user.extraNapkings)
+                    
+                    Toggle("Frequent Refills",
+                           isOn: $viewModel.user.frequentRefills)
                 } header: {
                     Text("🎛Request")
                 }.tint(.primaryOrange)
                 
             }.navigationTitle("Account 😃")
         }
+        .alert(item: $viewModel.accountUi.alertItem) { alert in
+            Alert(title: alert.title,
+                  message: alert.message,
+                  dismissButton: alert.dismissButton)
+        }
     }
 }
 
 struct AccountView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountView(accountViewModel: AccountViewModel())
+        AccountView(viewModel: AccountViewModel())
     }
 }

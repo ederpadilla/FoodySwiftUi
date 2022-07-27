@@ -21,7 +21,7 @@ struct HomeTabView: View {
                     Image(systemName: "clock")
                     Text("Orders")
                 }
-            AccountView(accountViewModel: AccountViewModel())
+            AccountView(viewModel: AccountViewModel())
                 .tabItem {
                     Image(systemName: "person")
                     Text("Account")
