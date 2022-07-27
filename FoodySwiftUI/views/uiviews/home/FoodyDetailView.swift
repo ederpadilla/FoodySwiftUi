@@ -27,7 +27,7 @@ struct FoodyDetailView: View {
             Spacer()
             
             Button {
-                isShowingView = false
+                print("🚀🚀🚀🚀")
             } label: {
                 Label("$\(foody.price, specifier: "%.2f") - Add to Order",
                       systemImage: "fork.knife.circle.fill")
