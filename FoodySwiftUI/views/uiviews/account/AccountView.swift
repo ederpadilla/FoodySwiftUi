@@ -31,7 +31,7 @@ struct AccountView: View {
                     }
                     
                     Button {
-                        print("Save")
+                        viewModel.saveChanges()
                     } label: {
                         Label("Save",
                               systemImage: "square.and.arrow.down")
