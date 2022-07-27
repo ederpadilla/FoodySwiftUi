@@ -30,13 +30,6 @@ struct RemoteImage: View {
     }
 }
 
-
-struct RemoteImage_Previews: PreviewProvider {
-    static var previews: some View {
-        RemoteImage()
-    }
-}
-
 struct FoodyRemoteImage: View {
     
     @StateObject var imageLoader = ImageLoader()
@@ -45,5 +38,11 @@ struct FoodyRemoteImage: View {
     var body: some View {
         RemoteImage(image: imageLoader.image)
             .onAppear { imageLoader.load(url: url) }
+    }
+}
+
+struct FoodyRemoteImage_Previews: PreviewProvider {
+    static var previews: some View {
+        FoodyRemoteImage(url: "https://seanallen-course-backend.herokuapp.com/images/appetizers/chicken-avocado-spring-roll.jpg")
     }
 }
