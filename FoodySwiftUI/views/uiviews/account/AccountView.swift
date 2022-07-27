@@ -26,6 +26,9 @@ struct AccountView: View {
                                selection: $accountViewModel.user.birthDate,
                                in: ...Date(),
                                displayedComponents: .date)
+                    .onChange(of: accountViewModel.user.birthDate) { newValue in
+                        print("🚀newValue \(newValue)")
+                    }
                     
                     Button {
                         print("Save")
