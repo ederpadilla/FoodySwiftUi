@@ -17,7 +17,7 @@ struct AccountView: View {
                 Section {
                     TextField("First name", text: $accountViewModel.user.firstName)
                     TextField("Last Name", text: $accountViewModel.user.lastName)
-                    TextField("Email", text: $accountViewModel.user.emailName)
+                    TextField("Email", text: $accountViewModel.user.email)
                         .keyboardType(.emailAddress)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)

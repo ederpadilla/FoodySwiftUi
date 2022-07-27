@@ -20,6 +20,7 @@
 		E6490D472890D95D00A3F281 /* XMarkButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D462890D95D00A3F281 /* XMarkButtonView.swift */; };
 		E662187E2891F1B300F77EEA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662187D2891F1B300F77EEA /* User.swift */; };
 		E66218812891F6F200F77EEA /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66218802891F6F200F77EEA /* AccountViewModel.swift */; };
+		E66218842891F87300F77EEA /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66218832891F87300F77EEA /* String+Extensions.swift */; };
 		E66511F9288F1D5C0099DB86 /* FoodySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66511F8288F1D5C0099DB86 /* FoodySwiftUIApp.swift */; };
 		E66511FB288F1D5C0099DB86 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66511FA288F1D5C0099DB86 /* TabView.swift */; };
 		E66511FD288F1D5F0099DB86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66511FC288F1D5F0099DB86 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		E6490D462890D95D00A3F281 /* XMarkButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButtonView.swift; sourceTree = "<group>"; };
 		E662187D2891F1B300F77EEA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E66218802891F6F200F77EEA /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		E66218832891F87300F77EEA /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		E66511F5288F1D5C0099DB86 /* FoodySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66511F8288F1D5C0099DB86 /* FoodySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodySwiftUIApp.swift; sourceTree = "<group>"; };
 		E66511FA288F1D5C0099DB86 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 		E6490D3028906E3C00A3F281 /* foundation */ = {
 			isa = PBXGroup;
 			children = (
+				E66218822891F86800F77EEA /* extensions */,
 				E6490D342890734400A3F281 /* network */,
 				E6490D3128906E4300A3F281 /* uiextensions */,
 			);
@@ -183,6 +186,14 @@
 				E66218802891F6F200F77EEA /* AccountViewModel.swift */,
 			);
 			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		E66218822891F86800F77EEA /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E66218832891F87300F77EEA /* String+Extensions.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		E66511EC288F1D5C0099DB86 = {
@@ -332,6 +343,7 @@
 				E6490D3D2890781D00A3F281 /* RemoteImage.swift in Sources */,
 				E6490D2F28906D7200A3F281 /* ActivityIndicator.swift in Sources */,
 				E6490D432890CB9700A3F281 /* View+Extension.swift in Sources */,
+				E66218842891F87300F77EEA /* String+Extensions.swift in Sources */,
 				E6651209288F1F230099DB86 /* AccountView.swift in Sources */,
 				E6651214288F3F4B0099DB86 /* FoodyItemView.swift in Sources */,
 				E6651207288F1EB30099DB86 /* HomeListView.swift in Sources */,
