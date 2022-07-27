@@ -17,18 +17,20 @@ struct HomeListView: View {
                 List(viewModel.homeUI.foodys) { foody in
                     FoodyItemView(foodyListItemUI: foody)
                         .onTapGesture {
-                            viewModel.homeUI.isShowingDetail = true
+                            didTapFoody(foody)
                         }
                 }
                 .navigationTitle("🥪 Foods")
+                .disabled(viewModel.homeUI.isShowingDetail)
             }
             .onAppear {
                 viewModel.getFoodyes()
             }
+            .blur(radius: viewModel.homeUI.isShowingDetail ? 20 : 0)
             
             if viewModel.homeUI.isShowingDetail {
                 FoodyDetailView(isShowingView: $viewModel.homeUI.isShowingDetail,
-                                foody: MockData.smapleFoody)
+                                foody: viewModel.selectedFoody)
             }
             
             if viewModel.homeUI.isLoading {
@@ -40,6 +42,10 @@ struct HomeListView: View {
                   message: alert.message,
                   dismissButton: alert.dismissButton)
         }
+    }
+    
+    private func didTapFoody(_ foodyListItemUI: FoodyListItemUI) {
+        viewModel.selectFoody(foodyListItemUI)
     }
 }
 

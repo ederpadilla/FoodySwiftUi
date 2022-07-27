@@ -11,7 +11,8 @@ class HomeListViewModel: ObservableObject {
     
     
     @Published var homeUI: HomeUI = HomeUI()
-    
+    private var foodys = [Foody]()
+    var selectedFoody = Foody()
     
     func getFoodyes() {
         homeUI.isLoading = true
@@ -29,6 +30,7 @@ class HomeListViewModel: ObservableObject {
     }
     
     private func handleGetFoodyesSuccess(_ foodys: [Foody]) {
+        self.foodys = foodys
         homeUI.foodys = foodys.asFoodyListItemUI()
     }
     
@@ -48,6 +50,13 @@ class HomeListViewModel: ObservableObject {
             return AlertContext.noInternet
         case .unknown:
             return AlertContext.unknown
+        }
+    }
+    
+    func selectFoody(_ foodyListItemUI: FoodyListItemUI) {
+        if let selectedFoody = foodys.first(where: {  $0.id == foodyListItemUI.id }) {
+            self.selectedFoody = selectedFoody
+            homeUI.isShowingDetail = true
         }
     }
 }
