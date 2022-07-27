@@ -12,8 +12,7 @@ struct FoodyItemView: View {
     
     var body: some View {
         HStack {
-            Image("asian-flank-steak")
-                .resizable()
+            FoodyRemoteImage(url: foody.image)
                 .aspectRatio(contentMode: .fit)
                 .clipped()
                 .frame(width: 120,

@@ -13,6 +13,7 @@
 		E6490D2C2890457300A3F281 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D2B2890457300A3F281 /* Alerts.swift */; };
 		E6490D2F28906D7200A3F281 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D2E28906D7200A3F281 /* ActivityIndicator.swift */; };
 		E6490D3328906E4E00A3F281 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D3228906E4E00A3F281 /* Color+Extension.swift */; };
+		E6490D3D2890781D00A3F281 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D3C2890781D00A3F281 /* RemoteImage.swift */; };
 		E66511F9288F1D5C0099DB86 /* FoodySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66511F8288F1D5C0099DB86 /* FoodySwiftUIApp.swift */; };
 		E66511FB288F1D5C0099DB86 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66511FA288F1D5C0099DB86 /* HomeTabView.swift */; };
 		E66511FD288F1D5F0099DB86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66511FC288F1D5F0099DB86 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		E6490D2B2890457300A3F281 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		E6490D2E28906D7200A3F281 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		E6490D3228906E4E00A3F281 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		E6490D3C2890781D00A3F281 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		E66511F5288F1D5C0099DB86 /* FoodySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66511F8288F1D5C0099DB86 /* FoodySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodySwiftUIApp.swift; sourceTree = "<group>"; };
 		E66511FA288F1D5C0099DB86 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				E6490D3228906E4E00A3F281 /* Color+Extension.swift */,
+				E6490D3C2890781D00A3F281 /* RemoteImage.swift */,
 			);
 			path = uiextensions;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6691D6B288F767600C0C873 /* NetworkManager.swift in Sources */,
+				E6490D3D2890781D00A3F281 /* RemoteImage.swift in Sources */,
 				E6490D2F28906D7200A3F281 /* ActivityIndicator.swift in Sources */,
 				E6651209288F1F230099DB86 /* AccountView.swift in Sources */,
 				E6651214288F3F4B0099DB86 /* FoodyItemView.swift in Sources */,
