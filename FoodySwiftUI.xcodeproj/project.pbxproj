@@ -103,6 +103,7 @@
 			children = (
 				E6490D1D28903F3F00A3F281 /* viewmodel */,
 				E66511FA288F1D5C0099DB86 /* HomeTabView.swift */,
+				E6651213288F3F4B0099DB86 /* FoodyItemView.swift */,
 				E6651206288F1EB30099DB86 /* HomeListView.swift */,
 				E6490D2E28906D7200A3F281 /* ActivityIndicator.swift */,
 			);
@@ -185,7 +186,6 @@
 				E66511F8288F1D5C0099DB86 /* FoodySwiftUIApp.swift */,
 				E66511FC288F1D5F0099DB86 /* Assets.xcassets */,
 				E66511FE288F1D5F0099DB86 /* Preview Content */,
-				E6651213288F3F4B0099DB86 /* FoodyItemView.swift */,
 			);
 			path = FoodySwiftUI;
 			sourceTree = "<group>";
