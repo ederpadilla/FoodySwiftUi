@@ -15,7 +15,7 @@
 		E6490D3328906E4E00A3F281 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D3228906E4E00A3F281 /* Color+Extension.swift */; };
 		E6490D3D2890781D00A3F281 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D3C2890781D00A3F281 /* RemoteImage.swift */; };
 		E66511F9288F1D5C0099DB86 /* FoodySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66511F8288F1D5C0099DB86 /* FoodySwiftUIApp.swift */; };
-		E66511FB288F1D5C0099DB86 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66511FA288F1D5C0099DB86 /* HomeTabView.swift */; };
+		E66511FB288F1D5C0099DB86 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66511FA288F1D5C0099DB86 /* TabView.swift */; };
 		E66511FD288F1D5F0099DB86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66511FC288F1D5F0099DB86 /* Assets.xcassets */; };
 		E6651200288F1D5F0099DB86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66511FF288F1D5F0099DB86 /* Preview Assets.xcassets */; };
 		E6651207288F1EB30099DB86 /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6651206288F1EB30099DB86 /* HomeListView.swift */; };
@@ -38,7 +38,7 @@
 		E6490D3C2890781D00A3F281 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		E66511F5288F1D5C0099DB86 /* FoodySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66511F8288F1D5C0099DB86 /* FoodySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodySwiftUIApp.swift; sourceTree = "<group>"; };
-		E66511FA288F1D5C0099DB86 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		E66511FA288F1D5C0099DB86 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		E66511FC288F1D5F0099DB86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E66511FF288F1D5F0099DB86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E6651206288F1EB30099DB86 /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		E6490D242890434A00A3F281 /* uiviews */ = {
 			isa = PBXGroup;
 			children = (
-				E66511FA288F1D5C0099DB86 /* HomeTabView.swift */,
+				E66511FA288F1D5C0099DB86 /* TabView.swift */,
 				E6490D272890437100A3F281 /* orders */,
 				E6490D262890436900A3F281 /* account */,
 				E6490D252890435400A3F281 /* home */,
@@ -314,7 +314,7 @@
 				E6691D6D288F774800C0C873 /* FoodyError.swift in Sources */,
 				E6651212288F2D0D0099DB86 /* FoodyRemote.swift in Sources */,
 				E6490D2A289043BF00A3F281 /* AlertView.swift in Sources */,
-				E66511FB288F1D5C0099DB86 /* HomeTabView.swift in Sources */,
+				E66511FB288F1D5C0099DB86 /* TabView.swift in Sources */,
 				E665120E288F2BCB0099DB86 /* FoodyModels.swift in Sources */,
 				E66511F9288F1D5C0099DB86 /* FoodySwiftUIApp.swift in Sources */,
 				E6490D2C2890457300A3F281 /* Alerts.swift in Sources */,
