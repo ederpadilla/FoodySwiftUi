@@ -36,6 +36,15 @@ struct AccountView: View {
                 } header: {
                     Text("😇Account")
                 }
+
+                Section {
+                    Toggle("Extra Napkings", isOn: $user.extraNapkings)
+                        
+                    Toggle("Frequent Refills", isOn: $user.frequentRefills)
+                } header: {
+                    Text("🎛Request")
+                }.tint(.primaryOrange)
+                
             }.navigationTitle("Account 😃")
         }
     }

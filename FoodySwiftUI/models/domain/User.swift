@@ -12,14 +12,20 @@ struct User {
     var lastName: String
     var emailName: String
     var birthDate: Date
+    var extraNapkings: Bool
+    var frequentRefills: Bool
     
     init(firstName: String = "",
          lastName: String = "",
          emailName: String = "",
-         birthDate: Date = Date()) {
+         birthDate: Date = Date(),
+         extraNapkings: Bool = false,
+         frequentRefills: Bool = false) {
         self.firstName = firstName
         self.lastName = lastName
         self.emailName = emailName
         self.birthDate = birthDate
+        self.extraNapkings = extraNapkings
+        self.frequentRefills = frequentRefills
     }
 }
