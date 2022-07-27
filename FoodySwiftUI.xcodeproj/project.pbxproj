@@ -91,6 +91,7 @@
 		E6490D242890434A00A3F281 /* uiviews */ = {
 			isa = PBXGroup;
 			children = (
+				E66511FA288F1D5C0099DB86 /* HomeTabView.swift */,
 				E6490D272890437100A3F281 /* orders */,
 				E6490D262890436900A3F281 /* account */,
 				E6490D252890435400A3F281 /* home */,
@@ -102,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				E6490D1D28903F3F00A3F281 /* viewmodel */,
-				E66511FA288F1D5C0099DB86 /* HomeTabView.swift */,
 				E6651213288F3F4B0099DB86 /* FoodyItemView.swift */,
 				E6651206288F1EB30099DB86 /* HomeListView.swift */,
 				E6490D2E28906D7200A3F281 /* ActivityIndicator.swift */,
