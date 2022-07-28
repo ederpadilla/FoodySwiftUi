@@ -18,9 +18,7 @@ struct OrdersView: View {
                     ForEach(orderItems) { foody in
                         FoodyItemView(foodyListItemUI: foody)
                     }
-                    .onDelete { indexSet in
-                        orderItems.remove(atOffsets: indexSet)
-                    }
+                    .onDelete(perform: deleteItem)
                 }
                 .listStyle(GroupedListStyle())
                 
@@ -38,6 +36,10 @@ struct OrdersView: View {
             }
             .navigationTitle("Orders 🍻")
         }
+    }
+    
+    func deleteItem(_ indexSet: IndexSet) {
+        orderItems.remove(atOffsets: indexSet)
     }
 }
 
