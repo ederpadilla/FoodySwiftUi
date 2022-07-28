@@ -29,3 +29,24 @@ struct User {
         self.frequentRefills = frequentRefills
     }
 }
+
+extension User {
+    
+    func asUserLocal() -> UserLocal {
+        UserLocal(firstName: firstName,
+                  lastName: lastName,
+                  email: email,
+                  birthDate: birthDate,
+                  extraNapkings: extraNapkings,
+                  frequentRefills: frequentRefills)
+    }
+}
+
+struct UserLocal: Codable {
+    var firstName: String
+    var lastName: String
+    var email: String
+    var birthDate: Date
+    var extraNapkings: Bool
+    var frequentRefills: Bool
+}
