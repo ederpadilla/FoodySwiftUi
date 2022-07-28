@@ -13,4 +13,5 @@ enum FoodyError: Error {
     case invalidData
     case noInternet
     case unknown
+    case notFoundedUser
 }

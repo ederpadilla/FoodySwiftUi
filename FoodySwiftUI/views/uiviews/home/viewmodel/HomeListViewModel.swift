@@ -48,7 +48,7 @@ class HomeListViewModel: ObservableObject {
             return AlertContext.invalidData
         case .noInternet:
             return AlertContext.noInternet
-        case .unknown:
+        default:
             return AlertContext.unknown
         }
     }

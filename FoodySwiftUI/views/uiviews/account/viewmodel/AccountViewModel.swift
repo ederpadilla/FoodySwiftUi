@@ -13,8 +13,15 @@ class AccountViewModel: ObservableObject {
     @Published var accountUi = AccountUi()
     private var localDataSource = LocalDataSource.shared
     
-    func retrieveUser() {
-        
+    func getUser() {
+        localDataSource.getUser { [weak self] result in
+            switch result {
+            case .success(let user):
+                self?.user = user
+            case .failure(_):
+                self?.accountUi.alertItem = AlertContext.userNotFound
+            }
+        }
     }
     
     var isValidForm: Bool {

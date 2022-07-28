@@ -53,4 +53,7 @@ struct AlertContext {
     
     static let userSaveError = AlertInfo(title: "😟Unsaved user😟",
                                         message: "Your user hasnt been saved successfully.").asAlertItem()
+    
+    static let userNotFound = AlertInfo(title: "😢User not founded😢",
+                                        message: "cant find an user.").asAlertItem()
 }

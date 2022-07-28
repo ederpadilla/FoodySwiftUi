@@ -22,4 +22,14 @@ final class LocalDataSource {
             completion(false)
         }
     }
+    
+    func getUser(completion: @escaping (Result<User, FoodyError>) -> Void) {
+        guard let userData = userData else { return }
+        do {
+            let userDecodable = try JSONDecoder().decode(UserLocal.self, from: userData)
+            completion(.success(userDecodable.asUser()))
+        } catch {
+            completion(.failure(.notFoundedUser))
+        }
+    }
 }

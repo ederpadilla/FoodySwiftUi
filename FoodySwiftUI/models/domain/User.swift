@@ -50,3 +50,15 @@ struct UserLocal: Codable {
     var extraNapkings: Bool
     var frequentRefills: Bool
 }
+
+extension UserLocal {
+    
+    func asUser() -> User {
+        User(firstName: firstName,
+             lastName: lastName,
+             email: email,
+             birthDate: birthDate,
+             extraNapkings: extraNapkings,
+             frequentRefills: frequentRefills)
+    }
+}
