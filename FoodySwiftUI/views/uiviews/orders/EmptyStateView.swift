@@ -33,6 +33,7 @@ struct EmptyStateView: View {
                     .padding()
             }
         }
+        .offset(y: -15)
     }
 }
 
