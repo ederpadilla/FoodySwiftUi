@@ -9,16 +9,16 @@ import SwiftUI
 
 struct OrdersView: View {
     
-    @State private var orderItems = MockData.foodysUi
+    @EnvironmentObject var order: Order
     
     var body: some View {
         NavigationView {
             
             ZStack {
                 
-                ExtractedView(orderItems: $orderItems)
+                ExtractedView(orderItems: $order.items)
                 
-                if orderItems.isEmpty {
+                if order.items.isEmpty {
                     EmptyStateView(image: "note.text",
                                    message: "Theres no orders here 🥲")
                 }
@@ -36,12 +36,18 @@ struct OrdersView_Previews: PreviewProvider {
 
 struct ExtractedView: View {
     
-    @Binding var orderItems: [FoodyListItemUI]
+    @Binding var orderItems: [Foody]
+    private var foodyListItems: [FoodyListItemUI]
+    
+    init(orderItems: Binding<[Foody]>) {
+        self._orderItems = orderItems
+        self.foodyListItems = orderItems.wrappedValue.asFoodyListItemUI()
+    }
     
     var body: some View {
         VStack {
             List {
-                ForEach(orderItems) { foody in
+                ForEach(foodyListItems) { foody in
                     FoodyItemView(foodyListItemUI: foody)
                 }
                 .onDelete(perform: deleteItem)

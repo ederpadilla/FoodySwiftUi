@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FoodyDetailView: View {
     
+    @EnvironmentObject var order: Order
     @Binding var isShowingView: Bool
     let foody: Foody
     
@@ -27,7 +28,8 @@ struct FoodyDetailView: View {
             Spacer()
             
             Button {
-                print("🚀🚀🚀🚀")
+                order.add(foody)
+                isShowingView = false
             } label: {
                 Label("$\(foody.price, specifier: "%.2f") - Add to Order",
                       systemImage: "fork.knife.circle.fill")
