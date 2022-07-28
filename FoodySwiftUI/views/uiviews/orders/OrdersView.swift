@@ -16,7 +16,7 @@ struct OrdersView: View {
             
             ZStack {
                 
-                ExtractedView(orderItems: $order.items)
+                ExtractedView(order: .constant(order))
                 
                 if order.items.isEmpty {
                     EmptyStateView(image: "note.text",
@@ -36,18 +36,12 @@ struct OrdersView_Previews: PreviewProvider {
 
 struct ExtractedView: View {
     
-    @Binding var orderItems: [Foody]
-    private var foodyListItems: [FoodyListItemUI]
-    
-    init(orderItems: Binding<[Foody]>) {
-        self._orderItems = orderItems
-        self.foodyListItems = orderItems.wrappedValue.asFoodyListItemUI()
-    }
+    @Binding var order: Order
     
     var body: some View {
         VStack {
             List {
-                ForEach(foodyListItems) { foody in
+                ForEach(order.items.asFoodyListItemUI()) { foody in
                     FoodyItemView(foodyListItemUI: foody)
                 }
                 .onDelete(perform: deleteItem)
@@ -57,7 +51,7 @@ struct ExtractedView: View {
             Button {
                 print("🚀🚀🚀")
             } label: {
-                Label("Place Order",
+                Label(order.totalPrice(),
                       systemImage: "takeoutbag.and.cup.and.straw")
                 .frame(maxWidth: .infinity)
             }
@@ -69,6 +63,6 @@ struct ExtractedView: View {
     }
     
     func deleteItem(_ indexSet: IndexSet) {
-        orderItems.remove(atOffsets: indexSet)
+        order.remove(indexSet)
     }
 }
