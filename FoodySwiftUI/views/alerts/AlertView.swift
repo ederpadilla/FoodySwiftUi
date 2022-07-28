@@ -47,4 +47,10 @@ struct AlertContext {
     
     static let invalidEmail = AlertInfo(title: "🤖Invalid Email🤖",
                                         message: "The email address is invalid.").asAlertItem()
+    
+    static let userSaveSuccess = AlertInfo(title: "😜User Saved!😜",
+                                        message: "Your user has been saved successfully").asAlertItem()
+    
+    static let userSaveError = AlertInfo(title: "😟Unsaved user😟",
+                                        message: "Your user hasnt been saved successfully.").asAlertItem()
 }

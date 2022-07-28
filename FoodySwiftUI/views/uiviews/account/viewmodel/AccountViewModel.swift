@@ -11,6 +11,11 @@ class AccountViewModel: ObservableObject {
     
     @Published var user = User()
     @Published var accountUi = AccountUi()
+    private var localDataSource = LocalDataSource.shared
+    
+    func retrieveUser() {
+        
+    }
     
     var isValidForm: Bool {
         guard !user.firstName.isEmpty
@@ -32,6 +37,8 @@ class AccountViewModel: ObservableObject {
     
     func saveChanges() {
         guard isValidForm else { return }
-        print("🚀🚀🚀🚀")
+        localDataSource.storeUser(user) { stored in
+            accountUi.alertItem = stored ? AlertContext.userSaveSuccess : AlertContext.userSaveError
+        }
     }
 }

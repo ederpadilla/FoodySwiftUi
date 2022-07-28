@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E60E37CE2892170300A6C778 /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60E37CD2892170300A6C778 /* LocalDataSource.swift */; };
 		E6490D1F28903F6400A3F281 /* HomeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D1E28903F6400A3F281 /* HomeListViewModel.swift */; };
 		E6490D2228903FA600A3F281 /* HomeUIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D2128903FA600A3F281 /* HomeUIModels.swift */; };
 		E6490D2A289043BF00A3F281 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D29289043BF00A3F281 /* AlertView.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E60E37CD2892170300A6C778 /* LocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
 		E6490D1E28903F6400A3F281 /* HomeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewModel.swift; sourceTree = "<group>"; };
 		E6490D2128903FA600A3F281 /* HomeUIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUIModels.swift; sourceTree = "<group>"; };
 		E6490D29289043BF00A3F281 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E60E37CF2892171000A6C778 /* local */ = {
+			isa = PBXGroup;
+			children = (
+				E60E37CD2892170300A6C778 /* LocalDataSource.swift */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
 		E6490D1D28903F3F00A3F281 /* viewmodel */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +168,7 @@
 		E6490D3028906E3C00A3F281 /* foundation */ = {
 			isa = PBXGroup;
 			children = (
+				E60E37CF2892171000A6C778 /* local */,
 				E66218822891F86800F77EEA /* extensions */,
 				E6490D342890734400A3F281 /* network */,
 				E6490D3128906E4300A3F281 /* uiextensions */,
@@ -366,6 +377,7 @@
 				E6490D472890D95D00A3F281 /* XMarkButtonView.swift in Sources */,
 				E66218862891FD3100F77EEA /* AccountUi.swift in Sources */,
 				E665120B288F1F2E0099DB86 /* OrdersView.swift in Sources */,
+				E60E37CE2892170300A6C778 /* LocalDataSource.swift in Sources */,
 				E6490D452890CF8B00A3F281 /* NutritionFoodyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
