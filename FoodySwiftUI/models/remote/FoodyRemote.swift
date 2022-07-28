@@ -89,4 +89,21 @@ struct MockData {
                                    carbs: 573)
     
     static let foodys = [smapleFoody, smapleFoody2, smapleFoody3, smapleFoody, smapleFoody2, smapleFoody3]
+    
+    static let itemOne = FoodyListItemUI(id: 1,
+                                  name: "Nachos",
+                                  price: 23.99,
+                                  image: "https://seanallen-course-backend.herokuapp.com/images/appetizers/chicken-dumplings.jpg")
+    
+    static let itemTwo = FoodyListItemUI(id: 2,
+                                  name: "Tacos",
+                                  price: 83.99,
+                                  image: "https://seanallen-course-backend.herokuapp.com/images/appetizers/chicken-avocado-spring-roll.jpg")
+    
+    static let itemThree = FoodyListItemUI(id: 3,
+                                    name: "Burgers",
+                                    price: 63.99,
+                                    image: "https://seanallen-course-backend.herokuapp.com/images/appetizers/buffalo-chicken-bites.jpg")
+    
+    static let foodysUi = [itemOne, itemTwo, itemThree]
 }

@@ -10,7 +10,13 @@ import SwiftUI
 struct OrdersView: View {
     var body: some View {
         NavigationView {
-            Text("Orders")
+            VStack {
+                List {
+                    ForEach(MockData.foodysUi) { foody in
+                        
+                    }
+                }
+            }
                 .navigationTitle("Orders 🍻")
         }
     }
