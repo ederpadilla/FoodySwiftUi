@@ -16,7 +16,7 @@ struct OrdersView: View {
             
             ZStack {
                 
-                ExtractedView(order: .constant(order))
+                OrdersListView(order: .constant(order))
                 
                 if order.items.isEmpty {
                     EmptyStateView(image: "note.text",
@@ -34,7 +34,7 @@ struct OrdersView_Previews: PreviewProvider {
     }
 }
 
-struct ExtractedView: View {
+struct OrdersListView: View {
     
     @Binding var order: Order
     
