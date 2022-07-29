@@ -62,7 +62,16 @@ struct AccountView: View {
                     Text("🎛Request")
                 }.tint(.primaryOrange)
                 
-            }.navigationTitle("Account 😃")
+            }
+            .navigationTitle("Account 😃")
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Button("Disiss") { focusTextField = nil }
+                }
+            }
+            .onTapGesture {
+                hideKeyboard()
+            }
         }
         .onAppear {
             viewModel.getUser()
