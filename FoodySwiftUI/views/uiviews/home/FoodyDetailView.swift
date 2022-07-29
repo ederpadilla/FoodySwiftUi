@@ -33,12 +33,12 @@ struct FoodyDetailView: View {
             } label: {
                 Label("$\(foody.price, specifier: "%.2f") - Add to Order",
                       systemImage: "fork.knife.circle.fill")
-                .frame(maxWidth: .infinity)
+               
             }
             .padding(.bottom, 30)
             .padding(.leading, 16)
             .padding(.trailing, 16)
-            .buttonStyle(.borderedProminent)
+            .buttonStyle(CusttomFoodyButtonStyle())
             
         }
         .frame(width: screenWidth - (screenWidth / 6),

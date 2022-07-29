@@ -9,24 +9,18 @@ import SwiftUI
 
 struct HomeTabView: View {
     
+    @EnvironmentObject var order: Order
+    
     var body: some View {
         TabView {
             HomeListView()
-                .tabItem {
-                    Image(systemName: "house.circle")
-                    Text("Home")
-                }
+                .tabItem { Label("Home", systemImage: "house.circle") }
             OrdersView()
-                .tabItem {
-                    Image(systemName: "clock")
-                    Text("Orders")
-                }
+                .tabItem { Label("Orders", systemImage: "clock") }
+                .badge(order.items.count)
             AccountView(viewModel: AccountViewModel())
-                .tabItem {
-                    Image(systemName: "person")
-                    Text("Account")
-                }
-        }.accentColor(.primaryOrange)
+                .tabItem { Label("Account", systemImage: "person") }
+        }
     }
 }
 

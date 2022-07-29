@@ -16,10 +16,12 @@ struct HomeListView: View {
             NavigationView {
                 List(viewModel.homeUI.foodys) { foody in
                     FoodyItemView(foodyListItemUI: foody)
+                        .listRowSeparator(.hidden)
                         .onTapGesture {
                             didTapFoody(foody)
                         }
                 }
+                .listStyle(.plain)
                 .navigationTitle("🥪 Foods")
                 .disabled(viewModel.homeUI.isShowingDetail)
             }

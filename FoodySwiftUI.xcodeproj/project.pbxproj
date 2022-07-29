@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6043B192894691600DAA5F4 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6043B182894691600DAA5F4 /* CustomModifiers.swift */; };
 		E60E37CE2892170300A6C778 /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60E37CD2892170300A6C778 /* LocalDataSource.swift */; };
 		E60E37D12892298A00A6C778 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60E37D02892298A00A6C778 /* EmptyStateView.swift */; };
 		E6490D1F28903F6400A3F281 /* HomeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D1E28903F6400A3F281 /* HomeListViewModel.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E6043B182894691600DAA5F4 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		E60E37CD2892170300A6C778 /* LocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
 		E60E37D02892298A00A6C778 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		E6490D1E28903F6400A3F281 /* HomeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewModel.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				E6490D3228906E4E00A3F281 /* Color+Extension.swift */,
 				E6490D3C2890781D00A3F281 /* RemoteImage.swift */,
 				E6490D422890CB9700A3F281 /* View+Extension.swift */,
+				E6043B182894691600DAA5F4 /* CustomModifiers.swift */,
 			);
 			path = uiextensions;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				E6691D6D288F774800C0C873 /* FoodyError.swift in Sources */,
 				E6651212288F2D0D0099DB86 /* FoodyRemote.swift in Sources */,
 				E6490D2A289043BF00A3F281 /* AlertView.swift in Sources */,
+				E6043B192894691600DAA5F4 /* CustomModifiers.swift in Sources */,
 				E66511FB288F1D5C0099DB86 /* TabView.swift in Sources */,
 				E6490D3F2890C8C000A3F281 /* FoodyDetailView.swift in Sources */,
 				E60E37D12892298A00A6C778 /* EmptyStateView.swift in Sources */,
