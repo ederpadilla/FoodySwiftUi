@@ -66,7 +66,8 @@ struct AccountView: View {
             .navigationTitle("Account 😃")
             .toolbar {
                 ToolbarItemGroup(placement: .keyboard) {
-                    Button("Disiss") { focusTextField = nil }
+                    Spacer()
+                    Button("Done") { focusTextField = nil }
                 }
             }
             .onTapGesture {
