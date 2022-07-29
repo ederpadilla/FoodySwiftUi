@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AccountView: View {
     
+    @FocusState private var focusTextField: FormTextField?
     @StateObject var viewModel = AccountViewModel()
     
     var body: some View {
@@ -16,8 +17,19 @@ struct AccountView: View {
             Form {
                 Section {
                     TextField("First name", text: $viewModel.user.firstName)
+                        .focused($focusTextField, equals: .firstName)
+                        .onSubmit { focusTextField = .lastName }
+                        .submitLabel(.next)
+                    
                     TextField("Last Name", text: $viewModel.user.lastName)
+                        .focused($focusTextField, equals: .lastName)
+                        .onSubmit { focusTextField = .email }
+                        .submitLabel(.next)
+                    
                     TextField("Email", text: $viewModel.user.email)
+                        .focused($focusTextField, equals: .email)
+                        .onSubmit { focusTextField = nil }
+                        .submitLabel(.continue)
                         .keyboardType(.emailAddress)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)

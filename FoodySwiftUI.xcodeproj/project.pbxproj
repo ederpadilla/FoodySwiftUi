@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E6043B192894691600DAA5F4 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6043B182894691600DAA5F4 /* CustomModifiers.swift */; };
+		E6043B1B28946CAC00DAA5F4 /* TextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6043B1A28946CAC00DAA5F4 /* TextField+Extension.swift */; };
 		E60E37CE2892170300A6C778 /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60E37CD2892170300A6C778 /* LocalDataSource.swift */; };
 		E60E37D12892298A00A6C778 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60E37D02892298A00A6C778 /* EmptyStateView.swift */; };
 		E6490D1F28903F6400A3F281 /* HomeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6490D1E28903F6400A3F281 /* HomeListViewModel.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		E6043B182894691600DAA5F4 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		E6043B1A28946CAC00DAA5F4 /* TextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Extension.swift"; sourceTree = "<group>"; };
 		E60E37CD2892170300A6C778 /* LocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
 		E60E37D02892298A00A6C778 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		E6490D1E28903F6400A3F281 /* HomeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewModel.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				E6490D3C2890781D00A3F281 /* RemoteImage.swift */,
 				E6490D422890CB9700A3F281 /* View+Extension.swift */,
 				E6043B182894691600DAA5F4 /* CustomModifiers.swift */,
+				E6043B1A28946CAC00DAA5F4 /* TextField+Extension.swift */,
 			);
 			path = uiextensions;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				E6B0E4E82892F3B900805A87 /* Order.swift in Sources */,
 				E6651214288F3F4B0099DB86 /* FoodyItemView.swift in Sources */,
 				E6651207288F1EB30099DB86 /* HomeListView.swift in Sources */,
+				E6043B1B28946CAC00DAA5F4 /* TextField+Extension.swift in Sources */,
 				E6490D2228903FA600A3F281 /* HomeUIModels.swift in Sources */,
 				E6490D1F28903F6400A3F281 /* HomeListViewModel.swift in Sources */,
 				E6490D3328906E4E00A3F281 /* Color+Extension.swift in Sources */,
