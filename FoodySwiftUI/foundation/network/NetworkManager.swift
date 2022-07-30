@@ -17,7 +17,7 @@ final class NetworkManager {
     
     private init() {}
     
-    func getFoodyes(completed: @escaping(Result<[Foody], FoodyError>) -> Void) {
+    /*func getFoodyes(completed: @escaping(Result<[Foody], FoodyError>) -> Void) {
         guard let url = URL(string: "\(baseUrl)\(appetizerEndPoint)") else { completed(.failure(.invalidURL)); return }
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
             if error != nil {
@@ -37,6 +37,21 @@ final class NetworkManager {
             }
         }
         task.resume()
+    }*/
+    
+    func fetchFoodys() async throws -> [Foody] {
+        guard let url = URL(string: "\(baseUrl)\(appetizerEndPoint)") else {
+            throw FoodyError.invalidURL
+        }
+        let (data, _) = try await URLSession.shared.data(from: url)
+        
+        do {
+            let decoder = JSONDecoder()
+            let responseDecoded = try decoder.decode(FoodyResponse.self, from: data)
+            return responseDecoded.asFoody()
+        } catch {
+            throw FoodyError.invalidData
+        }
     }
     
     func fetchImage(url: String, completed: @escaping(UIImage?) -> Void) {

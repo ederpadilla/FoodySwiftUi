@@ -7,14 +7,14 @@
 
 import Foundation
 
-class HomeListViewModel: ObservableObject {
+@MainActor final class HomeListViewModel: ObservableObject {
     
     
     @Published var homeUI: HomeUI = HomeUI()
     private var foodys = [Foody]()
     var selectedFoody = Foody()
     
-    func getFoodyes() {
+    /*func getFoodyes() {
         homeUI.isLoading = true
         NetworkManager.shared.getFoodyes { [weak self] result in
             DispatchQueue.main.async {
@@ -27,7 +27,7 @@ class HomeListViewModel: ObservableObject {
                 self?.homeUI.isLoading = false
             }
         }
-    }
+     }*/
     
     private func handleGetFoodyesSuccess(_ foodys: [Foody]) {
         self.foodys = foodys
@@ -36,6 +36,30 @@ class HomeListViewModel: ObservableObject {
     
     private func handleGetFoodyes(_ error: FoodyError) {
         homeUI.alertItem = getErrorAlert(error)
+    }
+    
+    func fetchFoodys() {
+        homeUI.isLoading = true
+        Task {
+            do {
+                handleFetchFoodysSuccess(try await NetworkManager.shared.fetchFoodys())
+            } catch {
+                handleFetchFoodysError(error)
+            }
+        }
+    }
+    
+    private func handleFetchFoodysSuccess(_ foodys: [Foody]) {
+        self.foodys = foodys
+        homeUI.foodys = foodys.asFoodyListItemUI()
+        homeUI.isLoading = false
+    }
+    
+    private func handleFetchFoodysError(_ error: Error?) {
+        if let error = error as? FoodyError {
+            homeUI.alertItem = getErrorAlert(error)
+        }
+        homeUI.isLoading = false
     }
     
     private func getErrorAlert(_ error: FoodyError) -> AlertItem {

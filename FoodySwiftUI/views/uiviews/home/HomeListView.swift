@@ -25,8 +25,11 @@ struct HomeListView: View {
                 .navigationTitle("🥪 Foods")
                 .disabled(viewModel.homeUI.isShowingDetail)
             }
-            .onAppear {
-                viewModel.getFoodyes()
+            //.onAppear {
+            //    viewModel.getFoodyes()
+            //}
+            .task {
+                viewModel.fetchFoodys()
             }
             .blur(radius: viewModel.homeUI.isShowingDetail ? 20 : 0)
             
