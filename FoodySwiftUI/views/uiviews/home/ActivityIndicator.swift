@@ -25,7 +25,10 @@ struct LoadingView: View {
         ZStack {
             Color(.systemBackground)
                 .ignoresSafeArea()
-            ActivityIndicator()
+            //ActivityIndicator()
+            ProgressView()
+                .progressViewStyle(CircularProgressViewStyle(tint:.primaryOrange))
+                .scaleEffect(1.5)
         }
     }
 }

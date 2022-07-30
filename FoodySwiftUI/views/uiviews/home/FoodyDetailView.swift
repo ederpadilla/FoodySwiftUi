@@ -17,16 +17,15 @@ struct FoodyDetailView: View {
         VStack {
             AsyncImage(url: URL(string: foody.image)) { image in
                 image
+                    .resizable()
                     .clipped()
                     .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: .infinity,
-                           minHeight: 210)
+                
             } placeholder: {
                 Image("food-placeholder")
+                    .resizable()
                     .aspectRatio(contentMode: .fit)
                     .clipped()
-                    .frame(maxWidth: .infinity,
-                           minHeight: 210)
             }
             
             Spacer()
