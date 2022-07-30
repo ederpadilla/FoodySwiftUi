@@ -15,11 +15,19 @@ struct FoodyDetailView: View {
     
     var body: some View {
         VStack {
-            FoodyRemoteImage(url: foody.image)
-                .aspectRatio(contentMode: .fit)
-                .clipped()
-                .frame(maxWidth: .infinity,
-                       minHeight: 210)
+            AsyncImage(url: URL(string: foody.image)) { image in
+                image
+                    .clipped()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(maxWidth: .infinity,
+                           minHeight: 210)
+            } placeholder: {
+                Image("food-placeholder")
+                    .aspectRatio(contentMode: .fit)
+                    .clipped()
+                    .frame(maxWidth: .infinity,
+                           minHeight: 210)
+            }
             
             Spacer()
             

@@ -12,12 +12,29 @@ struct FoodyItemView: View {
     
     var body: some View {
         HStack {
-            FoodyRemoteImage(url: foodyListItemUI.image)
+            /*FoodyRemoteImage(url: foodyListItemUI.image)
                 .aspectRatio(contentMode: .fit)
                 .clipped()
                 .frame(width: 120,
                        height: 90)
-                .cornerRadius(8)
+                .cornerRadius(8)*/
+            AsyncImage(url: URL(string: foodyListItemUI.image)) { image in
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .clipped()
+                    .frame(width: 120,
+                           height: 90)
+                    .cornerRadius(8)
+            } placeholder: {
+                Image("food-placeholder")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .clipped()
+                    .frame(width: 120,
+                           height: 90)
+                    .cornerRadius(8)
+            }
             
             VStack(alignment: .leading, spacing: 5) {
                 
