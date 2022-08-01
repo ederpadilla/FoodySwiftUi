@@ -37,3 +37,27 @@ struct XMarkButtonView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
+
+struct XMarkButtonPresenterView: View {
+    
+    @Binding var state: HomeState
+    
+    var body: some View {
+        Button(action: {
+            state = .hideDetailView
+        }, label: {
+            ZStack {
+                Circle()
+                    .frame(width: 30,
+                           height: 30)
+                    .foregroundColor(.white)
+                    .opacity(0.4)
+                Image(systemName: "xmark")
+                    .imageScale(.small)
+                    .frame(width: 44,
+                           height: 44)
+                    .foregroundColor(.gray)
+            }
+        })
+    }
+}

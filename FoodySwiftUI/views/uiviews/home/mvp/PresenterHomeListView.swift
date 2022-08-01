@@ -9,39 +9,36 @@ import SwiftUI
 
 struct HomeListWithPresenterView: View {
     
-    var presenter: HomePresenterProtocol
-    @ObservedObject var store: HomeStore
-    
-    init(store: HomeStore, presenter: HomePresenterProtocol) {
-        self.store = store
-        self.presenter = presenter
-    }
+    @ObservedObject var presenter: HomePresenter
+    @State private var foodyDetailView: FoodyDetailPresenterView?
     
     var body: some View {
         NavigationView {
-            switch store.state {
+            switch presenter.state {
             case .showFoodys(let foodys):
-                AnyView(List(foodys) { foody in
+                List(foodys) { foody in
                     FoodyItemView(foodyListItemUI: foody)
                         .listRowSeparator(.hidden)
                         .onTapGesture {
                             didTapFoody(foody)
                         }
                 }
-                    .listStyle(.plain)
-                    .navigationTitle("🥪 Foods")
-                )
+                .listStyle(.plain)
+                .navigationTitle("🥪 Foods")
+                
             case .showLoading:
                 LoadingView()
             case .showAlertItem(let alertItem):
-                AnyView( alert(item: .constant(alertItem)) { alert in
+                alert(item: .constant(alertItem)) { alert in
                     Alert(title: alert.title,
                           message: alert.message,
                           dismissButton: alert.dismissButton)
-                } )
+                }
             case .openDetailView(let selectedFoody):
-                AnyView(FoodyDetailView(isShowingView: .constant(true),
-                                        foody: selectedFoody))
+                AnyView(FoodyDetailPresenterView(state: $presenter.state,
+                                                           foody: selectedFoody))
+            case .hideDetailView:
+                self
             }
         }.task {
             presenter.fetchFoodys()
