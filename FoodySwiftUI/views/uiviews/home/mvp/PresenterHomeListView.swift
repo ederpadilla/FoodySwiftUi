@@ -36,9 +36,9 @@ struct HomeListWithPresenterView: View {
                 }
             case .openDetailView(let selectedFoody):
                 AnyView(FoodyDetailPresenterView(state: $presenter.state,
-                                                           foody: selectedFoody))
+                                                 foody: selectedFoody))
             case .hideDetailView:
-                self
+                AnyView(HomeListWithPresenterView(presenter: HomePresenter()))
             }
         }.task {
             presenter.fetchFoodys()

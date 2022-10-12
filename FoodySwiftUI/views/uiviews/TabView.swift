@@ -13,7 +13,7 @@ struct HomeTabView: View {
     
     var body: some View {
         TabView {
-            HomeListWithPresenterView(presenter: HomePresenter())
+            HomeListView(viewModel: HomeListViewModel())
                 .tabItem { Label("Home", systemImage: "house.circle") }
             OrdersView()
                 .tabItem { Label("Orders", systemImage: "clock") }

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef1ad75b-c00e-4350-ac3c-04ff042b878f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FoodySwiftUI.xcodeproj/xcuserdata/ederpadilla.xcuserdatad/xcschemes/FoodySwiftUI.xcscheme" afterDir="false" />
-    </list>
+    <list default="true" id="ef1ad75b-c00e-4350-ac3c-04ff042b878f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +10,9 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_34ECD569-C9E0-4627-8629-4380EAD03207" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="AppCode" />
@@ -26,16 +27,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "/Users/ederpadilla/Xcode Projects/FoodySwiftUI/FoodySwiftUI.xcodeproj"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ederpadilla/Xcode Projects/FoodySwiftUI/FoodySwiftUI.xcodeproj&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="FoodySwiftUI" type="AppleRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FoodySwiftUI" TARGET_NAME="FoodySwiftUI" CONFIG_NAME="Debug" SCHEME_NAME="FoodySwiftUI" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="FoodySwiftUI" RUN_TARGET_NAME="FoodySwiftUI" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
@@ -56,6 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1658972636454</updated>
       <workItem from="1658972638093" duration="34000" />
+      <workItem from="1659577122217" duration="185000" />
     </task>
     <servers />
   </component>
